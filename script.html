@@ -2,7 +2,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>gallery</title>
+    <title>script</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -21,11 +21,16 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./css/styles.css" />
-    <title>Anonymous</title>
-    <script src="./js/task-3.js" defer></script>
+
+    <script src="./js/task-6.js" defer></script>
   </head>
   <body>
-    <input type="text" id="name-input" placeholder="Please enter your name" />
-    <h1>Hello, <span id="name-output">Anonymous</span>!</h1>
+    <div id="controls">
+      <input type="number" min="1" max="100" step="1" />
+      <button type="button" data-create>Create</button>
+      <button type="button" data-destroy>Destroy</button>
+    </div>
+
+    <div id="boxes"></div>
   </body>
 </html>

@@ -2,7 +2,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Controls</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -21,16 +20,20 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./css/styles.css" />
-
-    <script src="./js/task-6.js" defer></script>
+    <title>form</title>
+    <script src="./js/task-4.js" defer></script>
   </head>
   <body>
-    <div id="controls">
-      <input type="number" min="1" max="100" step="1" />
-      <button type="button" data-create>Create</button>
-      <button type="button" data-destroy>Destroy</button>
-    </div>
-
-    <div id="boxes"></div>
+    <form class="login-form">
+      <label>
+        Email
+        <input type="email" name="email" />
+      </label>
+      <label>
+        Password
+        <input type="password" name="password" />
+      </label>
+      <button type="submit">Log in</button>
+    </form>
   </body>
 </html>
